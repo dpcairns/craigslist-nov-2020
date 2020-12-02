@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.border {
+    border: solid 1px black;
+}
+
+main {
+    display: grid;
+    grid-gap: 25px;
+    height: 100%;
+    width: 960px;
+}
+
+.list-header {
+    color: blue;
+    font-weight: 900;
+    text-align: center;
+    background: lightgray;
+}
+
+.two-column-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.one-column-list {
+    width: 100%;
+    display: grid;
+}
+
+.button {
+    width: 20px;
+    height: 20px;
+}
+
+.left {
+    grid-column: 1 / 4;
+    grid-row: 1 / 12;
+}
+
+.list-item {
+    border-bottom: solid 1px lightgray;
+    font-size: .8rem;
+}
+
+.list-item:hover {
+    background: lightgray;
+}
+
+.top {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    grid-column: 4 / 18;
+    grid-row: 1 / 1;
+}
+
+.top-inner {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+}
+
+.right {
+    grid-column: 18 / 19;
+    grid-row: 1 / 12;
+}
+
+.community {
+    grid-column: 4 / 9;
+    grid-row: 2 / 5;
+}
+
+.services {
+    grid-column: 4 / 9;
+    grid-row: 5 / 9;
+}
+
+.forums {
+    grid-column: 4 / 9;
+    grid-row: 9 / 12;   
+}
+
+
+.housing {
+    grid-column: 9 / 14;
+    grid-row: 2 / 8;
+}
+
+
+.for-sale {
+    grid-column: 9 / 14;
+    grid-row: 8 / 12;
+}
+
+
+.jobs {
+    grid-column: 14/ 18;
+    grid-row: 2 / 12
+}
